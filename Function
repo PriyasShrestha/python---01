@@ -1,0 +1,29 @@
+def add(x,y):
+    res= x+y
+    print(f'The sum is {res}')
+    
+def sub(x,y):
+    res= x-y
+    print(f'The Dif is {res}')
+def mul(x,y):
+    res= x*y
+    print(f'The mul is {res}')
+def div(x,y):
+    res= x/y
+    print(f'The div is {res}')
+
+x=int(input('enter the number a : '))
+y=int(input('enter the number b : '))
+cal=input('Enter the calculation add,sub,mul,div : ')
+match cal:
+    case "add":
+        add(x,y)
+    case "sub":
+        sub(x,y)
+    case "mul":
+        mul(x,y)
+    case "div":
+        div(x,y)
+    case _:
+        print('invalid case')
+

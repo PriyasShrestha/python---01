@@ -1,0 +1,18 @@
+balance = 125000
+pin = 1234
+
+new_pin=int(input('enter the pin'))
+if new_pin==pin:
+    withdraw_amount=int(input('Enter the amount'))
+    if withdraw_amount%1000==0:
+        if withdraw_amount<=balance:
+            print(f'Withdrawn successfull')
+        else:
+            print(f'Insufficient balance')
+    else:
+        print(f'Amount should be multiple of 1000')
+else:
+    print(f'Pin incorect')
+
+
+

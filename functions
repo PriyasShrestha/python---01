@@ -1,0 +1,24 @@
+a=int(input('Enter the number a '))
+b=int(input('Enter the number b '))
+def Add():
+        sum=a+b
+        print(f'The sum of A and B is {sum}')
+
+def Sub():
+        sub=a-b
+        print(f'The subtraction of A and B is {sub}')
+def Mul():
+        mul=a*b
+        print(f'The MULTIPLICATION of A and B is {mul}')
+def Div():
+        div=a/b
+        print(f'The DIVISION of A and B is {div}')
+cal=input('add for ADD \n sub for SUBTRACT \n mul for MULTIPLICATION \n and div for DIVISION')
+if cal=="add":
+        Add()
+if cal=="sub":
+        Sub()
+if cal=="mul":
+        Mul()
+if cal=="div":
+        Div()

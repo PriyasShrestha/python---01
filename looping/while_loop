@@ -1,0 +1,31 @@
+rem=3
+while rem>0:
+
+        print(f'You have {rem} tries left')
+        order_num= int(input('Enter your order'))
+
+        if order_num>0 and order_num<6:
+            rem=rem-1
+
+            match order_num:
+                case 1:
+                    print('You have order Burger ')
+            
+                case 2:
+                    print('You have order SAndwich ')
+            
+                case 3:
+                    print('You have order Frenchfries')
+            
+                case 4:
+                    print('You have order Drinks')
+                case 5:
+                      print('Exit')
+                      break
+        else:
+                
+                        print('invalid number')
+                        
+                                                
+print('Thankyou for your order')             
+
